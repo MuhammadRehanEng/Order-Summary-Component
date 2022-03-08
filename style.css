@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  /* Primary Colors */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral Colors */
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--Pale-blue);
+}
+body {
+  font-size: 16px;
+  background: url(./images/pattern-background-desktop.svg) no-repeat;
+  background-size: contain;
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__container {
+  background-color: #fff;
+  box-shadow: 0 20px 30px -10px rgba(150, 148, 255, 0.24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.card {
+  width: 400px;
+  height: auto;
+}
+.card img {
+  border-radius: 15px 15px 0 0;
+}
+
+.container__text {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.container__text h3 {
+  color: var(--Dark-blue);
+  font-weight: 900;
+}
+
+.container__text p {
+  text-align: center;
+  font-size: 14px;
+  color: var(--Desaturated-blue);
+  padding-top: 20px;
+  line-height: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.annual__plan {
+  display: flex;
+  margin: 25px;
+  padding: 20px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--Very-pale-blue);
+}
+
+.annual__plan p {
+  color: var(--Dark-blue);
+  font-weight: 700;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.annual__plan small {
+  color: var(--Desaturated-blue);
+  font-weight: 400;
+}
+
+.annual__plan .change {
+  color: var(--Bright-blue);
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 120px;
+}
+
+.btns {
+  text-align: center;
+  margin: 15px;
+  padding: 15px;
+}
+.btn__primary {
+  border: none;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 0 20px 30px -10px rgba(19, 15, 236, 0.24);
+  background-color: var(--Bright-blue);
+}
+
+.cancel_btn {
+  text-decoration: none;
+  color: var(--Desaturated-blue);
+  font-size: 13px;
+  font-weight: 900;
+}
